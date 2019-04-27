@@ -166,6 +166,7 @@ div.header .container .logo {
 }
 div.header .name {
   padding-top: 20px;
+  margin-left: 20px;
   font-size: 28px;
   font-family: 'Nexa Bold', 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
@@ -184,6 +185,7 @@ div.header .name {
   color: #333333;
 }
 div.header nav {
+  margin-left: 20px;
   margin-bottom: 16px;
 }
 div.header nav ul {
@@ -728,7 +730,7 @@ kbd {
 /* Fonts */
 
 {{ if not .Site.Params.disablefancyfonts  }}
-.wf-raleway-n4-active body, 
+.wf-raleway-n4-active body,
 .wf-raleway-n4-active div.header nav ul a,
 .wf-raleway-n7-active div.main .content .page-heading,
 .wf-raleway-n2-active div.main .container.f04 .content .num,
