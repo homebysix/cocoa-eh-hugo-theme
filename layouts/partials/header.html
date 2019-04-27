@@ -17,7 +17,9 @@
         <a href="{{ .Site.BaseURL }}"><img class="logo" src="{{ .Site.Params.logofile | relURL }}" alt="logo"></a>
         {{ end }}
         <div class="content">
+            {{ if .Site.Params.show_site_title }}
             <a href="/"><div class="name"><h1>{{ .Site.Title }}</h1></div></a>
+            {{end}}
             <nav>
                 <ul>
                     {{ if (and (ne (len (where .Site.RegularPages "Section" "blog")) 0) (not (in .Site.Params.exclude_headings "blog"))) }}
