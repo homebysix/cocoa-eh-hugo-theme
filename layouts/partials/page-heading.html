@@ -4,6 +4,8 @@
 {{ else }}
     {{ if .Params.draft }}
     Draft::{{ .Title }}
+    {{ else if .Params.hide_title }}
+    <!-- Page title hidden -->
     {{ else }}
     {{ .Title }}
     {{ end }}
