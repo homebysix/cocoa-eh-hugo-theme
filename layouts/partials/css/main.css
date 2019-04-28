@@ -524,6 +524,12 @@ img {
     max-width: 100%;
 }
 
+img.design-img {
+    border: 1px solid lightgray;
+    margin: 5px;
+    max-width: 48%;
+}
+
 div.main .content {
     width: 100%;
 }
