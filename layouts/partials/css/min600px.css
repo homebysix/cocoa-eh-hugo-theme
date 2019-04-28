@@ -38,8 +38,8 @@ div.header .container .logo {
     margin: 0;
 }
 div.header-home .container .logo {
-    max-width: 216px;
-    margin-left: 24px;
+    max-width: 120px;
+    /* margin-left: 24px; */
 }
 div.header-home .name-home {
     padding-top: 30px;
