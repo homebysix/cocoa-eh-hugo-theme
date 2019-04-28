@@ -859,13 +859,16 @@ kbd {
 
 {{ end }}
 
-@media only screen and (max-width: 600px), all {
+@media only screen and (max-width: 600px) {
     div.header .container .logo {
         max-width: 60px;
     }
+    div.header nav {
+        margin-left: 6px;
+    }
     div.header nav ul li {
-        margin-left: 4px;
-        margin-right: 4px;
+        margin-left: 3px;
+        margin-right: 3px;
     }
     div.header nav ul li a {
         font-size: 10px;
