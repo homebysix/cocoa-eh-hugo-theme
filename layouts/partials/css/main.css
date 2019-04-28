@@ -174,9 +174,9 @@ div.header .content {
 
 div.header .container .logo {
     {{ if .Site.Params.enlarged }}
-    max-width: 200px;
+    max-width: 140px;
     {{ else }}
-    max-width: 120px;
+    max-width: 100px;
     {{ end }}
 }
 
