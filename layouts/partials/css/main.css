@@ -176,9 +176,8 @@ div.header .container .logo {
     {{ if .Site.Params.enlarged }}
     max-width: 200px;
     {{ else }}
-    max-width: 100px;
+    max-width: 120px;
     {{ end }}
-    margin-left: -2em;
 }
 
 div.header .name {
@@ -859,3 +858,17 @@ kbd {
 }
 
 {{ end }}
+
+@media only screen and (max-width: 600px), all {
+    div.header .container .logo {
+        max-width: 60px;
+    }
+    div.header nav ul li {
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    div.header nav ul li a {
+        font-size: 10px;
+        letter-spacing: 0px;
+    }
+}
