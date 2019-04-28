@@ -264,6 +264,7 @@ div.footer .container a {
     margin-left: 6px;
     margin-right: 6px;
     opacity: 0.6;
+    color: #666666;
     -webkit-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
     -moz-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
     -ms-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
