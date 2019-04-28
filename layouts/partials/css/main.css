@@ -290,7 +290,7 @@ div.footer .container a .icon {
 
 div.footer .container .copyright {
     flex-grow: 0.5;
-    text-align: start;
+    text-align: center;
 }
 
 div.footer .container .icons {
