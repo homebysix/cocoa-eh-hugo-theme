@@ -288,6 +288,11 @@ div.footer .container a .icon {
     height: 16px;
 }
 
+div.footer .container .gitrepo {
+    flex-grow: 0.5;
+    text-align: start;
+}
+
 div.footer .container .copyright {
     flex-grow: 0.5;
     text-align: center;
