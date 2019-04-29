@@ -20,6 +20,10 @@
   <script src="{{ .Site.BaseURL }}js/progressively.min.js" defer></script>
 {{ end }}
 
+{{ if .Site.Params.lazyimg }}
+  <script src="{{ .Site.BaseURL }}js/lazyimg.js" defer></script>
+{{ end }}
+
 {{ if .Site.Params.share }}
   <script src="{{ .Site.BaseURL }}js/social-share-kit.min.js" defer></script>
 {{ end }}
