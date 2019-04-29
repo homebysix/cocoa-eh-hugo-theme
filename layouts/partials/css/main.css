@@ -257,6 +257,7 @@ div.footer .container {
     flex-direction: column-reverse;
     width: 100%;
     text-align: center;
+    line-height: 0.8em;
 }
 
 div.footer .container a {
