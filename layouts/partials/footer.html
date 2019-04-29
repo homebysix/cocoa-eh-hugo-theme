@@ -1,21 +1,22 @@
 <div class="footer column">
     <div class="container">
 
+        <div class="gitrepo">
         {{ if .Site.Params.githubRepo }}
-            <div class="copyright">
             {{ $length := len ( split .Site.Params.githubRepo "/" ) }}
             {{ if eq $length 2 }}
-                <a href="https://github.com/{{ .Site.Params.githubRepo }}/tree/master/content/{{ replace .File.Path "\\" "/" }}" target="_blank">View this post on GitHub</a>
+                <a href="https://github.com/{{ .Site.Params.githubRepo }}/tree/master/content/{{ replace .File.Path "\\" "/" }}" target="_blank">
+                    src
+                </a>
             {{ else }}
                 <a href="https://github.com/{{ .Site.Params.githubRepo }}/content/{{ replace .File.Path "\\" "/" }}" target="_blank">
                     src
                 </a>
             {{ end }}
-            </div>
         {{ end }}
+        </div>
 
         <div class="copyright">
-
         {{ if .Site.Params.copyright }}
             {{ if .Site.Params.copyrightUrl }}
                 <a href="{{ .Site.Params.copyrightUrl }}">{{ replace .Site.Params.copyright "{year}" now.Year | safeHTML }}</a>
@@ -23,10 +24,9 @@
                 <a href="{{ .Site.BaseURL }}license">{{ replace .Site.Params.copyright "{year}" now.Year | safeHTML }}</a>
             {{ end }}
         {{ end }}
-
         </div>
-        <div class="icons">
 
+        <div class="icons">
         {{ if .Site.Params._500px }}
             <a href="https://500px.com/{{ .Site.Params._500px }}" rel=me target="_blank">
                 <img class="icon" src="{{ .Site.BaseURL }}img/500px.svg" alt="500px" />
@@ -92,8 +92,8 @@
                 <img class="icon" src="{{ .Site.BaseURL }}img/rss.svg" alt="rss" />
             </a> -->
         {{ end }}
-
         </div>
+
     </div>
 </div>
 
