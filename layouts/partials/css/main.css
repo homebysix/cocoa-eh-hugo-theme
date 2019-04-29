@@ -530,12 +530,6 @@ img {
     max-width: 100%;
 }
 
-img.design-img {
-    border: 1px solid lightgray;
-    margin: 5px;
-    max-width: 48%;
-}
-
 div.main .content {
     width: 100%;
 }
@@ -846,6 +840,30 @@ kbd {
     white-space: nowrap;
 }
 
+/* Responsive */
+@media only screen and (max-width: 600px) {
+    div.header .container .logo {
+        max-width: 60px;
+    }
+    div.header nav {
+        margin-left: 6px;
+    }
+    div.header nav ul li {
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+    div.header nav ul li a {
+        font-size: 10px;
+        letter-spacing: 0px;
+    }
+    img.design-img {
+        margin: 0;
+    }
+    div.footer .container a {
+        font-size: 10px;
+    }
+}
+
 /* Fonts */
 {{ if not .Site.Params.disablefancyfonts }}
 .wf-raleway-n4-active body,
@@ -871,26 +889,3 @@ kbd {
 }
 
 {{ end }}
-
-@media only screen and (max-width: 600px) {
-    div.header .container .logo {
-        max-width: 60px;
-    }
-    div.header nav {
-        margin-left: 6px;
-    }
-    div.header nav ul li {
-        margin-left: 3px;
-        margin-right: 3px;
-    }
-    div.header nav ul li a {
-        font-size: 10px;
-        letter-spacing: 0px;
-    }
-    img.design-img {
-        margin: 0;
-    }
-    div.footer .container a {
-        font-size: 10px;
-    }
-}
