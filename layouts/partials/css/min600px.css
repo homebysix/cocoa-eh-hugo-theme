@@ -11,19 +11,11 @@ section {
     padding: 0 16px;
     margin-left: 100px;
     margin-right: 100px;
-    {{ if .Site.Params.enlarged }}
-    max-width: 825px;
-    {{ else }}
-    max-width: 750px;
-    {{ end }}
+    max-width: 960px;
 }
 div.column {
     padding: 0 16px;
-    {{ if .Site.Params.enlarged }}
-    max-width: 825px;
-    {{ else }}
-    max-width: 750px;
-    {{ end }}
+    max-width: 960px;
 }
 div.header {
     background-color: transparent;
@@ -50,10 +42,11 @@ div.header-home nav ul a {
     letter-spacing: 1px;
 }
 div.header .content {
-    -webkit-align-items: flex-start;
-    -moz-align-items: flex-start;
-    -ms-align-items: flex-start;
-    align-items: flex-start;
+    -webkit-align-items: flex-end;
+    -moz-align-items: flex-end;
+    -ms-align-items: flex-end;
+    align-items: flex-end;
+    width: 100%;
 }
 div.header .name {
     color: #333333;
