@@ -840,6 +840,14 @@ kbd {
     white-space: nowrap;
 }
 
+span.draftlabel {
+    background-color: #eee;
+    border-radius: 3px;
+    color: #666;
+    font-size: 0.8em;
+    padding: 1px 5px;
+}
+
 /* Responsive */
 @media only screen and (max-width: 600px) {
     div.header .container .logo {

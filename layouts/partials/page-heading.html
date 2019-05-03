@@ -3,7 +3,7 @@
     {{ .Params.heading }}
 {{ else }}
     {{ if .Params.draft }}
-    Draft::{{ .Title }}
+    <span class="draftlabel">DRAFT</span> {{ .Title }}
     {{ else if .Params.hide_title }}
     <!-- Page title hidden -->
     {{ else }}
