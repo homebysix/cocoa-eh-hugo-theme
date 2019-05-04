@@ -3,8 +3,11 @@
 <style media="screen">
   {{ partial "css/main.css" . | safeCSS }}
 </style>
-<style media="(min-width: 600px)">
-  {{ partial "css/min600px.css" . | safeCSS }}
+<style media="(min-width: 960px)">
+  {{ partial "css/min960px.css" . | safeCSS }}
+</style>
+<style media="(max-width: 600px)">
+  {{ partial "css/max600px.css" . | safeCSS }}
 </style>
 
 <noscript>

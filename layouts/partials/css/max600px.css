@@ -1,0 +1,19 @@
+div.header .container .logo {
+    max-width: 60px;
+}
+div.header nav {
+    margin-left: 6px;
+}
+div.header nav ul li {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+div.header nav ul li a {
+    font-size: 10px;
+}
+img.design-img {
+    margin: 0;
+}
+div.footer .container a {
+    font-size: 10px;
+}
