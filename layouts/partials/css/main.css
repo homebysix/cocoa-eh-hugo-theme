@@ -260,7 +260,8 @@ div.footer .container {
     line-height: 0.8em;
 }
 
-div.footer .container a {
+div.footer .container a,
+div.footer .container .copyright {
     font-size: 14px;
     margin-left: 6px;
     margin-right: 6px;
