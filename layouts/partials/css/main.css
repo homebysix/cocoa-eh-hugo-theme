@@ -734,6 +734,15 @@ div.main .content .markdown tbody tr:nth-child(odd) th {
     background-color: #f7f7f7;
 }
 
+div.footnotes::before {
+    content: "Footnotes";
+    padding-top: 100px;
+    display: block;
+    text-transform: uppercase;
+    font-family: "Raleway";
+    letter-spacing: 1px;
+}
+
 div.main .content .markdown .footnotes ol {
     list-style-type: decimal;
     margin-left: 16px;
