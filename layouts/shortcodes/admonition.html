@@ -1,0 +1,4 @@
+<div class="admonition admonition-{{ .Get 0 }}" role="{{ .Get 0 }}">
+	{{ with .Get 1 }}<p class="admonition-title">{{ . }}</p>{{ end }}
+	<p class="admonition-content">{{ .Inner }}</p>
+</div>

@@ -1,0 +1,108 @@
+/*
+	Based on style and qualifiers in mkdocs-material theme:
+	https://squidfunk.github.io/mkdocs-material/extensions/admonition/#note;
+*/
+
+div.admonition {
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),
+				0 1px 5px 0 rgba(0,0,0,.12),
+				0 3px 1px -2px rgba(0,0,0,.2);
+	position: relative;
+	margin: 1em 0;
+	border-radius: .4rem;
+	padding: 0 1rem 0rem 1rem;
+	overflow: auto;
+	line-height: 1.8rem;
+}
+
+p.admonition-title {
+	text-transform: uppercase;
+	font-family: "Raleway";
+	margin: 0 -1rem;
+	padding: .4rem 1rem;
+	border-bottom: .05rem solid rgba(68,138,255,.1);
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+/* Boxes with blue style */
+
+div.admonition-abstract .admonition-title,
+div.admonition-cite .admonition-title,
+div.admonition-example .admonition-title,
+div.admonition-faq .admonition-title,
+div.admonition-help .admonition-title,
+div.admonition-info .admonition-title,
+div.admonition-note .admonition-title,
+div.admonition-question .admonition-title,
+div.admonition-quote .admonition-title,
+div.admonition-seealso .admonition-title,
+div.admonition-snippet .admonition-title,
+div.admonition-summary .admonition-title,
+div.admonition-tldr .admonition-title,
+div.admonition-todo .admonition-title {
+	background-color: rgba(68,138,255,.1);
+}
+
+div.admonition-abstract,
+div.admonition-cite,
+div.admonition-example,
+div.admonition-faq,
+div.admonition-help,
+div.admonition-info,
+div.admonition-note,
+div.admonition-question,
+div.admonition-quote,
+div.admonition-seealso,
+div.admonition-snippet,
+div.admonition-summary,
+div.admonition-tldr,
+div.admonition-todo {
+	border-left: .4rem solid #448aff;
+}
+
+/* Boxes with red style */
+
+div.admonition-attention .admonition-title,
+div.admonition-bug .admonition-title,
+div.admonition-caution .admonition-title,
+div.admonition-danger .admonition-title,
+div.admonition-error .admonition-title,
+div.admonition-fail .admonition-title,
+div.admonition-failure .admonition-title,
+div.admonition-important .admonition-title,
+div.admonition-missing .admonition-title,
+div.admonition-warning .admonition-title {
+	background-color: rgba(245,0,87,.1);
+}
+
+div.admonition-attention,
+div.admonition-bug,
+div.admonition-caution,
+div.admonition-danger,
+div.admonition-error,
+div.admonition-fail,
+div.admonition-failure,
+div.admonition-important,
+div.admonition-missing,
+div.admonition-warning {
+	border-left: .4rem solid #f50057;
+}
+
+/* Boxes with green style */
+
+div.admonition-check .admonition-title,
+div.admonition-done .admonition-title,
+div.admonition-hint .admonition-title,
+div.admonition-success .admonition-title,
+div.admonition-tip .admonition-title {
+	background-color: rgba(0,200,83,.1);
+}
+
+div.admonition-check,
+div.admonition-done,
+div.admonition-hint,
+div.admonition-success,
+div.admonition-tip {
+	border-left: .4rem solid #00c853;
+}
