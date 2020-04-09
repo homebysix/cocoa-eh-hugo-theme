@@ -9,7 +9,9 @@
 </style>
 </head>
 <body>
+    {{ if (isset .Site.Params "logofile") }}
     <a href="{{ .Site.BaseURL }}" class="logo"><img class="logo" src="{{ .Site.Params.logofile | relURL }}" alt="logo" style="max-width: 180px;"></a>
+    {{ end }}
     <div class="container f04">
         <div class="content">
             <div class="header column">

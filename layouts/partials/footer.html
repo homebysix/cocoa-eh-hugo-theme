@@ -18,6 +18,17 @@
         {{ end }}
         </div>
 
+        {{ if .Site.Params.gitlabRepo }}
+            <div class="copyright">
+            {{ $length := len ( split .Site.Params.gitlabRepo "/" ) }}
+            {{ if eq $length 2 }}
+                <a href="https://gitlab.com/{{ .Site.Params.gitlabRepo }}/tree/master/content/{{ replace .File.Path "\\" "/" }}" target="_blank">View this post on gitlab</a>
+            {{ else }}
+                <a href="https://gitlab.com/{{ .Site.Params.gitlabRepo }}/content/{{ replace .File.Path "\\" "/" }}" target="_blank">View this post on gitlab</a>
+            {{ end }}
+            </div>
+        {{ end }}
+
         <div class="copyright">
         {{ if .Site.Params.copyright }}
             {{ if .Site.Params.copyrightUrl }}
@@ -53,6 +64,12 @@
             </a>
         {{ end }}
 
+        {{ if .Site.Params.twitch }}
+            <a href="https://www.twitch.tv/{{ .Site.Params.twitch }}" rel=me target="_blank">
+                <img class="icon" src="{{ .Site.BaseURL }}img/twitch.png" alt="twitch" />
+            </a>
+        {{ end }}
+
         {{ if .Site.Params.facebook }}
             <a href="https://facebook.com/{{ .Site.Params.facebook }}" rel=me target="_blank">
                 <img class="icon" src="{{ .Site.BaseURL }}img/facebook.svg" alt="facebook" />
@@ -81,6 +98,12 @@
             <a href="https://keybase.io/{{ .Site.Params.keybase}}" rel=me target="_blank">
                 <img class="icon" src="{{ .Site.BaseURL }}img/keybase.svg" alt="keybase" />
             </a>
+        {{ end }}
+
+        {{ if .Site.Params.untappd }}
+        <a href="https://untappd.com/user/{{ .Site.Params.untappd}}" rel=me target="_blank">
+            <img class="icon" src="{{ .Site.BaseURL }}img/untappd.svg" alt="untappd" />
+        </a>
         {{ end }}
 
         {{ if .Site.Params.email }}
