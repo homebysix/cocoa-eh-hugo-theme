@@ -7,11 +7,11 @@
                 {{ $length := len ( split .Site.Params.githubRepo "/" ) }}
                 {{ if eq $length 2 }}
                     <a href="https://github.com/{{ .Site.Params.githubRepo }}/tree/master/content/{{ replace .File.Path "\\" "/" }}" target="_blank">
-                        src
+                        &lt;/&gt;
                     </a>
                 {{ else }}
                     <a href="https://github.com/{{ .Site.Params.githubRepo }}/content/{{ replace .File.Path "\\" "/" }}" target="_blank">
-                        src
+                        &lt;/&gt;
                     </a>
                 {{ end }}
             {{ end }}
