@@ -1,0 +1,14 @@
+{{ $related := .Site.RegularPages.Related . | first 5 }}
+{{ with $related }}
+<div style="border: 1px solid lightgray; border-radius: 6px; padding: 0 28px 14px 28px; background-color: #fcfcfc;">
+    <h2>Related Posts</h2>
+    <ul>
+        {{ range . }}
+        <li>
+            <!-- {{ .Date.Format .Site.Params.dateform }} -->
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
+        {{ end }}
+    </ul>
+</div>
+{{ end }}

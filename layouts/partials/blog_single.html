@@ -48,7 +48,9 @@
             </div>
             <div class="markdown">
                 {{ partial "content" . }}
-            </div>
+                {{ partial "references" . }}
+                {{ partial "related" . }}
+              </div>
             {{ if .Site.Params.share }}
             <br>
             <div class="share">
@@ -107,6 +109,7 @@
             <div id="commento"></div>
             <script src="//{{ .Site.Params.commentoHost }}/js/commento.js"></script>
             {{ end }}
-        </div>
+
+          </div>
     </div>
 </div>

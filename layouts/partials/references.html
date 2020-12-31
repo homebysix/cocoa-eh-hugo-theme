@@ -1,0 +1,15 @@
+{{ with .Params.references }}
+<div style="border: 1px solid lightgray; border-radius: 6px; padding: 0 28px 14px 28px; background-color: #fcfcfc;">
+    <h2>Further Reading</h2>
+    <ul>
+        {{ range . }}
+        <li>
+            <strong><a href="{{ .url }}" target="_blank">{{ .title }}</a></strong>
+            {{ if .description }}
+            <br />{{ .description }}
+            {{ end }}
+        </li>
+        {{ end }}
+    </ul>
+</div>
+{{ end }}
