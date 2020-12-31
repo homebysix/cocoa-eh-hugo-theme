@@ -15,13 +15,13 @@ div.header nav ul a {
 }
 
 div.main .content .markdown code {
-    background-color: {{ .Param "colors.background" }};
-    color: {{ .Param "colors.identifier" }};
+    /* background-color: {{ .Param "colors.background" }}; */
+    /* color: {{ .Param "colors.identifier" }}; */
 }
 
 div.main .content .markdown pre, div.main .content .markdown pre code {
-    background-color: {{ .Param "colors.background_dark" }};
-    color: {{ .Param "colors.code" }};
+    /* background-color: {{ .Param "colors.background_dark" }}; */
+    /* color: {{ .Param "colors.code" }}; */
 }
 
 .hljs, .hljs-subst, .hljs-variable {
