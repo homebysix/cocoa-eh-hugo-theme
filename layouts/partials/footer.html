@@ -6,7 +6,7 @@
             {{ if eq .IsHome false }}
                 {{ $length := len ( split .Site.Params.githubRepo "/" ) }}
                 {{ if eq $length 2 }}
-                    <a href="https://github.com/{{ .Site.Params.githubRepo }}/tree/master/content/{{ replace .File.Path "\\" "/" }}" target="_blank">
+                    <a href="https://github.com/{{ .Site.Params.githubRepo }}/tree/{{ .Site.Params.gitBranch }}/content/{{ replace .File.Path "\\" "/" }}" target="_blank">
                         &lt;/&gt;
                     </a>
                 {{ else }}
@@ -16,18 +16,21 @@
                 {{ end }}
             {{ end }}
         {{ end }}
-        </div>
-
         {{ if .Site.Params.gitlabRepo }}
-            <div class="copyright">
-            {{ $length := len ( split .Site.Params.gitlabRepo "/" ) }}
-            {{ if eq $length 2 }}
-                <a href="https://gitlab.com/{{ .Site.Params.gitlabRepo }}/tree/master/content/{{ replace .File.Path "\\" "/" }}" target="_blank">View this post on gitlab</a>
-            {{ else }}
-                <a href="https://gitlab.com/{{ .Site.Params.gitlabRepo }}/content/{{ replace .File.Path "\\" "/" }}" target="_blank">View this post on gitlab</a>
+            {{ if eq .IsHome false }}
+                {{ $length := len ( split .Site.Params.gitlabRepo "/" ) }}
+                {{ if eq $length 2 }}
+                    <a href="https://gitlab.com/{{ .Site.Params.gitlabRepo }}/tree/{{ .Site.Params.gitBranch }}/content/{{ replace .File.Path "\\" "/" }}" target="_blank">
+                        View this post on GitLab
+                    </a>
+                {{ else }}
+                    <a href="https://gitlab.com/{{ .Site.Params.gitlabRepo }}/content/{{ replace .File.Path "\\" "/" }}" target="_blank">
+                        View this post on GitLab
+                    </a>
+                {{ end }}
             {{ end }}
-            </div>
         {{ end }}
+        </div>
 
         <div class="copyright">
         {{ if .Site.Params.copyright }}
