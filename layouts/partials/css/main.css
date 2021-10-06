@@ -603,12 +603,18 @@ div.main .content .markdown pre {
     /* Hugo specific: consider using the 'highlight' shortcode */
     display: block;
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    /* Moving space out of pre margin and into div.highlight below. */
+    /* margin-bottom: 2rem; */
     padding: 1rem;
     line-height: 1.5em;
     white-space: pre;
     word-break: break-all;
-    word-wrap: break-word;
+    /* Commenting, causes misaligned line numbers in code blocks: */
+    /* word-wrap: break-word; */
+}
+
+div.highlight {
+    margin-bottom: 2rem;
 }
 
 div.main .content .markdown pre code {
