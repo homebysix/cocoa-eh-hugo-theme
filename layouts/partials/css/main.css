@@ -732,6 +732,11 @@ div.main .content .markdown table {
     border-collapse: collapse;
 }
 
+div.main .content .markdown th {
+    font-weight: bold;
+    background-color: #e5e5e5;
+}
+
 div.main .content .markdown td,
 div.main .content .markdown th {
     padding: .25rem .5rem;
