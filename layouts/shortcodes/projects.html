@@ -1,0 +1,44 @@
+<style>
+    .project {
+        padding-bottom: 1.5rem;
+    }
+
+    .project-link {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .project-role {
+        font-family: Raleway;
+        font-size: 0.8rem;
+        font-weight: lighter;
+        text-transform: uppercase;
+        border-radius: 3px;
+        padding: 3px 10px;
+        margin: 0 0 0 10px;
+        color: white;
+        /*  Default to gray if not specifed by role below.  */
+        background-color: lightgray;
+    }
+
+    .project-role-creator {
+        background-color: #419349;
+    }
+
+    .project-role-co-creator {
+        background-color: #C153B6;
+    }
+
+    .project-role-maintainer {
+        background-color: #527FC1;
+    }
+</style>
+
+<ul id="projects-list">
+    {{ range $.Site.Data.projects }}
+    <li class="project"><a href="{{ .url }}" target="_blank" class="project-link">{{ .name }}</a>
+        {{ range .roles }}<span class="project-role project-role-{{ . }}">{{ . }}</span>{{ end }}
+        <br /><span class="project-desc">{{ .description | markdownify }}</span>
+    </li>
+    {{ end }}
+</ul>

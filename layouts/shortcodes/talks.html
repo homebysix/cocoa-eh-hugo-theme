@@ -1,0 +1,30 @@
+<style>
+    .talk {
+        padding-bottom: 1.5rem;
+    }
+
+    .talk-link {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .talk-date,
+    .talk-location {
+        font-style: italic;
+    }
+
+    .talk-desc {
+        padding-top: 0.5rem;
+    }
+</style>
+
+<ul id="talks-list">
+    {{ range sort $.Site.Data.talks "date" "desc" }}
+    <li class="talk"><a href="{{ .url }}" target="_blank" class="talk-link">{{ .name }}</a>
+        <br /><span class="talk-date">{{ .date | time.Format ":date_long" }}</span> &mdash; <span
+            class="talk-location">{{ .location
+            }}</span>
+        <br /><span class="talk-desc">{{ .description | markdownify }}</span>
+    </li>
+    {{ end }}
+</ul>
