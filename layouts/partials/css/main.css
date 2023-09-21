@@ -918,4 +918,21 @@ div.main .content .markdown pre {
     font-family: 'Ubuntu Mono';
 }
 
+div.main .content .markdown details summary { 
+    background-color: #f7f7f7;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    margin-top: 1rem;
+}
+
+div.main .content .markdown details summary > * {
+    display: inline;
+}
+
+div.main .content .markdown details > div {
+    border: 4px solid #f7f7f7;
+    margin-top: 0;
+    padding: 1rem;
+}
+
 {{ end }}
