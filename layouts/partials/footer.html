@@ -2,7 +2,7 @@
     <div class="container">
 
         <div class="gitrepo">
-        {{ if .Site.Params.githubRepo }}
+        {{/*  {{ if .Site.Params.githubRepo }}
             {{ if eq .IsHome false }}
                 {{ $length := len ( split .Site.Params.githubRepo "/" ) }}
                 {{ if eq $length 2 }}
@@ -21,15 +21,15 @@
                 {{ $length := len ( split .Site.Params.gitlabRepo "/" ) }}
                 {{ if eq $length 2 }}
                     <a href="https://gitlab.com/{{ .Site.Params.gitlabRepo }}/tree/{{ .Site.Params.gitBranch }}/content/{{ replace .File.Path "\\" "/" }}" target="_blank">
-                        View this post on GitLab
+                        &lt;/&gt;
                     </a>
                 {{ else }}
                     <a href="https://gitlab.com/{{ .Site.Params.gitlabRepo }}/content/{{ replace .File.Path "\\" "/" }}" target="_blank">
-                        View this post on GitLab
+                        &lt;/&gt;
                     </a>
                 {{ end }}
             {{ end }}
-        {{ end }}
+        {{ end }}  */}}
         </div>
 
         <div class="copyright">
