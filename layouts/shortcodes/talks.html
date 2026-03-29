@@ -19,7 +19,7 @@
 </style>
 
 <ul id="talks-list">
-    {{ range sort $.Site.Data.talks "date" "desc" }}
+    {{ range sort hugo.Data.talks "date" "desc" }}
     <li class="talk"><a href="{{ .url }}" target="_blank" class="talk-link">{{ .name }}</a>
         <br /><span class="talk-date">{{ .date | time.Format ":date_long" }}</span>{{ if .location }} &mdash; <span
             class="talk-location">{{ .location }}</span>{{ end }}

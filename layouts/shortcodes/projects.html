@@ -35,7 +35,7 @@
 </style>
 
 <ul id="projects-list">
-    {{ range $.Site.Data.projects }}
+    {{ range hugo.Data.projects }}
     <li class="project"><a href="{{ .url }}" target="_blank" class="project-link">{{ .name }}</a>
         {{ range .roles }}<span class="project-role project-role-{{ . }}">{{ . }}</span>{{ end }}
         <br /><span class="project-desc">{{ .description | markdownify }}</span>
