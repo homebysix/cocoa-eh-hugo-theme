@@ -35,9 +35,6 @@
     {{ partial "css/colors.css" . | safeCSS }}
   </style>
 {{ end }}
-  <style type="text/css" media="screen">
-    {{ partial "css/mark.css" . | safeCSS }}
-  </style>
 {{ range .Site.Params.extracssfiles }}
   <link rel="stylesheet" href="{{ . | relURL }}">
 {{ end }}
